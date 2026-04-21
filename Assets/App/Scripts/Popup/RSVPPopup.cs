@@ -26,6 +26,7 @@ public class RSVPPopup : Popup
     [SerializeField] private GameObject spinnerObject;
 
     [Tooltip("Feedback label used to display the error message on submission failure (RSVP-11).")]
+    [SerializeField] private GameObject feedbackLabelObject;
     [SerializeField] private TMP_Text feedbackLabel;
 
     [Tooltip("Container Transform under the ScrollView. GuestRowUI prefabs are instantiated here at runtime.")]
@@ -122,8 +123,8 @@ public class RSVPPopup : Popup
         if (submitButton != null)  submitButton.interactable = true;
         if (spinnerObject != null) spinnerObject.SetActive(false);
 
-        if (feedbackLabel != null)
-            feedbackLabel.gameObject.SetActive(false);
+        if (feedbackLabelObject != null)
+            feedbackLabelObject.SetActive(false);
 
         if (notesInput != null)
         {
@@ -164,7 +165,7 @@ public class RSVPPopup : Popup
     {
         if (submitButton != null)  submitButton.interactable = false;
         if (spinnerObject != null) spinnerObject.SetActive(true);
-        if (feedbackLabel != null) feedbackLabel.gameObject.SetActive(false);
+        if (feedbackLabelObject != null) feedbackLabelObject.SetActive(false);
 
         string url = BuildSubmitUrl();
 
@@ -184,10 +185,10 @@ public class RSVPPopup : Popup
         else
         {
             // RSVP-11: show Italian error message with retry option
-            if (feedbackLabel != null)
+            if (feedbackLabel != null && feedbackLabelObject != null)
             {
                 feedbackLabel.text = "Errore nell'invio. Riprova.";
-                feedbackLabel.gameObject.SetActive(true);
+                feedbackLabelObject.SetActive(true);
             }
 
             if (submitButton != null) submitButton.interactable = true;

@@ -18,9 +18,6 @@ public class GuestRowUI : MonoBehaviour
     [Tooltip("Meal toggle: meat (carne). Set isOn = true by default in prefab Inspector.")]
     [SerializeField] private Toggle meatToggle;
 
-    [Tooltip("Meal toggle: fish (pesce).")]
-    [SerializeField] private Toggle fishToggle;
-
     [Tooltip("Meal toggle: vegetarian (vegetariano).")]
     [SerializeField] private Toggle vegetarianToggle;
 
@@ -37,7 +34,6 @@ public class GuestRowUI : MonoBehaviour
         get
         {
             if (meatToggle != null && meatToggle.isOn)              return "carne";
-            if (fishToggle != null && fishToggle.isOn)              return "pesce";
             if (vegetarianToggle != null && vegetarianToggle.isOn)  return "vegetariano";
             return "non specificato"; // fallback — prefab default (meatToggle.isOn) prevents this
         }

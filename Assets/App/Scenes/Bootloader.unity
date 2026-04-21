@@ -828,7 +828,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::App
   inviteSceneId: Invite
   homeSceneId: Home
-  groupDatabase: []
+  groupDatabase:
+  - password: testwithoutroom
+    groupDisplayName: Test Without Room
+    memberNames:
+    - test1_Nome test1_Cognome
+    - test2_Nome test2_Cognome
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentAddress: 
+    apartmentNotes: []
   loadingUI: {fileID: 936683698}
 --- !u!4 &2136416170
 Transform:
