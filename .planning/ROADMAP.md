@@ -10,10 +10,10 @@
 
 ## Phases
 
-- [ ] **Phase 1: Foundation** — App routing + password system + content gating infrastructure
-- [ ] **Phase 2: Wedding Content** — Home scene information + Invite scene + personalized sections
-- [ ] **Phase 3: RSVP** — Full RSVP form + Google Sheets submission
-- [ ] **Phase 4: WebGL Build & QA** — Build optimization + cross-browser verification
+- [x] **Phase 1: Foundation** — App routing + password system + content gating infrastructure
+- [x] **Phase 2: Wedding Content** — Home scene information + Invite scene + personalized sections
+- [x] **Phase 3: RSVP** — Full RSVP form + Google Sheets submission
+- [x] **Phase 4: WebGL Build & QA** — Build optimization + cross-browser verification
 
 ---
 
@@ -79,8 +79,8 @@ Plans:
 **Plans:** 3 plans
 Plans:
 - [x] 04-01-PLAN.md — SetAudioCompression Editor script + Player Settings configuration (Wave 1)
-- [ ] 04-02-PLAN.md — WebGL build + GitHub Pages gh-pages deployment (Wave 2)
-- [ ] 04-03-PLAN.md — QA checklist: Windows browsers + Android + iOS physical devices (Wave 3)
+- [x] 04-02-PLAN.md — WebGL build + GitHub Pages gh-pages deployment (Wave 2)
+- [x] 04-03-PLAN.md — QA checklist: Windows browsers + Android + iOS physical devices (Wave 3)
 
 ---
 
@@ -88,10 +88,10 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
-| 2. Wedding Content | 0/TBD | Not started | - |
-| 3. RSVP | 0/TBD | Not started | - |
-| 4. WebGL Build & QA | 0/TBD | Not started | - |
+| 1. Foundation | 2/2 | ✅ Complete | April 2026 |
+| 2. Wedding Content | 4/4 | ✅ Complete | April 2026 |
+| 3. RSVP | 2/2 | ✅ Complete | April 17, 2026 |
+| 4. WebGL Build & QA | 3/3 | ✅ Complete | April 21, 2026 |
 
 ---
 
