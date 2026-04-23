@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PopupManager : SingletonComponent<PopupManager>
+public class PopupManager : MonoBehaviour
 {
 	#region Classes
 
@@ -18,6 +18,8 @@ public class PopupManager : SingletonComponent<PopupManager>
 
 	#endregion
 
+	public static PopupManager Instance { get; private set; }
+
 	#region Inspector Variables
 
 	[SerializeField] private List<PopupInfo> popupInfos = null;
@@ -32,9 +34,15 @@ public class PopupManager : SingletonComponent<PopupManager>
 
 	#region Unity Methods
 
-	protected override void Awake()
+	private void Awake()
 	{
-		base.Awake();
+		if (Instance != null && Instance != this)
+		{
+			Destroy(gameObject);
+			return;
+		}
+
+		Instance = this;
 
 		activePopups = new List<Popup>();
 

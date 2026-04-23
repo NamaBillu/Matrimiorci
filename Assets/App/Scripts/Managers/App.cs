@@ -107,6 +107,18 @@ public class App : SingletonComponent<App>
         return false;
     }
 
+    public void GoToInviteScene()
+    {
+        loadingUI.gameObject.SetActive(true); // show loading UI on first scene
+        SceneManager.LoadScene(inviteSceneId);
+    }
+
+    public void GoToHomeScene()
+    {
+        loadingUI.gameObject.SetActive(true); // show loading UI on first scene
+        SceneManager.LoadScene(homeSceneId);
+    }
+
     #endregion
 
     #region Private Methods
@@ -150,15 +162,15 @@ public class App : SingletonComponent<App>
     {
         if (loadingUI != null && loadingUI.gameObject.activeInHierarchy)
         {
-            loadingUI.OnCompleted.AddListener(OnLoadingFulllyHidden);
+            loadingUI.OnCompleted.AddListener(OnLoadingFullyHidden);
             loadingUI.Play(true); // hide loading UI if still active after scene load (ROUT-04)
         }
     }
 
-    private void OnLoadingFulllyHidden()
+    private void OnLoadingFullyHidden()
     {
         loadingUI.gameObject.SetActive(false);
-        loadingUI.OnCompleted.RemoveListener(OnLoadingFulllyHidden);
+        loadingUI.OnCompleted.RemoveListener(OnLoadingFullyHidden);
     }
     private void SetGroup(GroupData group)
     {

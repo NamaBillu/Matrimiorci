@@ -16,7 +16,7 @@ public class SectionButton : MonoBehaviour
     [SerializeField] private GameObject lockIcon;
 
     [Tooltip("Optional label shown when locked, e.g. 'Inserisci il codice per sbloccare'.")]
-    [SerializeField] private TextMeshProUGUI hintLabel;
+    [SerializeField] private GameObject hintLabel;
 
     #endregion
 
@@ -56,7 +56,7 @@ public class SectionButton : MonoBehaviour
             lockIcon.SetActive(isLocked);
 
         if (hintLabel != null)
-            hintLabel.gameObject.SetActive(isLocked);
+            hintLabel.SetActive(isLocked);
 
         if (_button == null) return;
 
