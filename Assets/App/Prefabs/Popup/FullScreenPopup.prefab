@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6484665994469472257}
   - component: {fileID: 4171907704048057193}
   - component: {fileID: 2777828735607634842}
-  - component: {fileID: 550914866193911638}
   m_Layer: 0
   m_Name: FullScreenPopup
   m_TagString: Untagged
@@ -132,10 +131,10 @@ MonoBehaviour:
   playForward: 1
   useUnscaledTime: 1
   move:
-    Enabled: 0
+    Enabled: 1
     ValueMode: 0
     FromDirection: 0
-    From: {x: 0, y: 0, z: 0}
+    From: {x: 1500, y: 0, z: 0}
     ToDirection: 0
     To: {x: 0, y: 0, z: 0}
     Duration: 0.3
@@ -251,7 +250,7 @@ MonoBehaviour:
     Vibrato: 10
     Elasticity: 1
   fade:
-    Enabled: 1
+    Enabled: 0
     From: 0
     To: 1
     Duration: 0.5
@@ -292,18 +291,6 @@ MonoBehaviour:
   onCompleted:
     m_PersistentCalls:
       m_Calls: []
---- !u!225 &550914866193911638
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187034271381357157}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &2598735010855436170
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +352,7 @@ MonoBehaviour:
   m_Color: {r: 0.9372549, g: 0.9019608, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -438,9 +425,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -581,7 +568,7 @@ MonoBehaviour:
   m_Color: {r: 0.8392157, g: 0.6509804, b: 0.56078434, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -937,9 +924,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

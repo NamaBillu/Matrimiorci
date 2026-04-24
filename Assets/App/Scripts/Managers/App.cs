@@ -23,7 +23,7 @@ public class App : SingletonComponent<App>
     [SerializeField] private List<GroupData> groupDatabase = new List<GroupData>();
 
     [Space]
-    [SerializeField] private UIAnimator loadingUI;
+    [SerializeField] private GameObject loadingUI;
     #endregion
 
     #region Member Variables
@@ -77,10 +77,11 @@ public class App : SingletonComponent<App>
             SetGroup(savedGroup);
     }
 
-    private void Start()
+    public void BootUp()
     {
+        SoundManager.Instance.Play("default", loop: true, 0f);
         SceneManager.sceneLoaded += OnSceneLoaded;
-        loadingUI.gameObject.SetActive(true); // show loading UI on first scene
+        loadingUI.SetActive(true); // show loading UI on first scene
         SceneManager.LoadScene(ResolveDestination());
     }
 
@@ -109,13 +110,13 @@ public class App : SingletonComponent<App>
 
     public void GoToInviteScene()
     {
-        loadingUI.gameObject.SetActive(true); // show loading UI on first scene
+        loadingUI.SetActive(true); // show loading UI on first scene
         SceneManager.LoadScene(inviteSceneId);
     }
 
     public void GoToHomeScene()
     {
-        loadingUI.gameObject.SetActive(true); // show loading UI on first scene
+        loadingUI.SetActive(true); // show loading UI on first scene
         SceneManager.LoadScene(homeSceneId);
     }
 
@@ -160,18 +161,12 @@ public class App : SingletonComponent<App>
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (loadingUI != null && loadingUI.gameObject.activeInHierarchy)
+        if (loadingUI != null && loadingUI.activeInHierarchy)
         {
-            loadingUI.OnCompleted.AddListener(OnLoadingFullyHidden);
-            loadingUI.Play(true); // hide loading UI if still active after scene load (ROUT-04)
+            loadingUI.SetActive(false);
         }
     }
 
-    private void OnLoadingFullyHidden()
-    {
-        loadingUI.gameObject.SetActive(false);
-        loadingUI.OnCompleted.RemoveListener(OnLoadingFullyHidden);
-    }
     private void SetGroup(GroupData group)
     {
         CurrentGroup = group;

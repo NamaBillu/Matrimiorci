@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -255,7 +255,7 @@ MonoBehaviour:
     From: {x: 0, y: 0, z: 0}
     ToDirection: 0
     To: {x: 0, y: -20, z: 0}
-    Duration: 1.5
+    Duration: 1
     Delay: 0
     Ease: 7
     CustomCurve:
@@ -333,7 +333,7 @@ MonoBehaviour:
     ValueMode: 0
     From: {x: 1, y: 1, z: 1}
     To: {x: 1, y: -1, z: 1}
-    Duration: 1.5
+    Duration: 1
     Delay: 0
     Ease: 7
     CustomCurve:
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -470,6 +470,7 @@ GameObject:
   - component: {fileID: 206619416}
   - component: {fileID: 206619418}
   - component: {fileID: 206619417}
+  - component: {fileID: 206619420}
   - component: {fileID: 206619419}
   m_Layer: 5
   m_Name: Content
@@ -540,7 +541,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &206619419
+--- !u!225 &206619419
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206619415}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &206619420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -549,28 +562,172 @@ MonoBehaviour:
   m_GameObject: {fileID: 206619415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0433c3f4b913c64f82251440bcbbc22, type: 3}
+  m_Script: {fileID: 11500000, guid: 19e42da102f9f1b47b55fd848f1009e9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UIAnimations.Runtime::UIAnimations.UIAnimationStateMachine
-  states:
-  - Id: 
-    Animator: {fileID: 1916021650}
-    DelayBefore: 0
-    WaitForCompletion: 0
-  - Id: 
-    Animator: {fileID: 1487245934}
-    DelayBefore: 0
-    WaitForCompletion: 0
-  autoPlayOnEnable: 1
-  loop: 0
-  waitForCompletionTimeout: 10
-  onStateStarted:
+  m_EditorClassIdentifier: UIAnimations.Runtime::UIAnimations.UIAnimator
+  playOnStart: 1
+  playOnEnable: 1
+  playForward: 1
+  useUnscaledTime: 1
+  move:
+    Enabled: 0
+    ValueMode: 0
+    FromDirection: 0
+    From: {x: 0, y: 0, z: 0}
+    ToDirection: 0
+    To: {x: 0, y: 0, z: 0}
+    Duration: 0.3
+    Delay: 0
+    Ease: 7
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    PlayMode: 0
+    Loop: 0
+    LoopStartDelay: 0
+    LoopInterval: 0
+    LoopCount: 0
+    Vibrato: 10
+    Elasticity: 1
+  rotate:
+    Enabled: 0
+    ValueMode: 0
+    From: {x: 0, y: 0, z: 0}
+    To: {x: 0, y: 0, z: 0}
+    Duration: 0.3
+    Delay: 0
+    Ease: 7
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    PlayMode: 0
+    Loop: 0
+    LoopStartDelay: 0
+    LoopInterval: 0
+    LoopCount: 0
+    Vibrato: 10
+    Elasticity: 1
+  scale:
+    Enabled: 0
+    ValueMode: 0
+    From: {x: 1, y: 1, z: 1}
+    To: {x: 1, y: 1, z: 1}
+    Duration: 0.3
+    Delay: 0
+    Ease: 7
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    PlayMode: 0
+    Loop: 0
+    LoopStartDelay: 0
+    LoopInterval: 0
+    LoopCount: 0
+    Vibrato: 10
+    Elasticity: 1
+  fade:
+    Enabled: 1
+    From: 0
+    To: 1
+    Duration: 0.5
+    Delay: 0
+    Ease: 7
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    PlayMode: 0
+    Loop: 0
+    LoopStartDelay: 0
+    LoopInterval: 0
+    LoopCount: 0
+  onStarted:
     m_PersistentCalls:
       m_Calls: []
-  onStateCompleted:
-    m_PersistentCalls:
-      m_Calls: []
-  onSequenceCompleted:
+  onCompleted:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &508853195
@@ -634,7 +791,7 @@ MonoBehaviour:
     From: {x: 0, y: -440, z: 0}
     ToDirection: 0
     To: {x: 0, y: 2000, z: 0}
-    Duration: 2
+    Duration: 1.5
     Delay: 0
     Ease: 7
     CustomCurve:
@@ -673,7 +830,7 @@ MonoBehaviour:
     ValueMode: 0
     From: {x: 0, y: 0, z: 0}
     To: {x: 0, y: 0, z: -5}
-    Duration: 2
+    Duration: 1.5
     Delay: 0
     Ease: 7
     CustomCurve:
@@ -816,7 +973,7 @@ MonoBehaviour:
   m_Color: {r: 0.9372549, g: 0.9019608, b: 0.8666667, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -969,7 +1126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1324,7 +1481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1435,8 +1592,8 @@ CanvasGroup:
   m_GameObject: {fileID: 848349979}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &848349982
 MonoBehaviour:
@@ -1761,9 +1918,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.45882353, g: 0.2901961, b: 0.21568628, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1997,7 +2154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2249,7 +2406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2346,8 +2503,6 @@ GameObject:
   - component: {fileID: 1487245932}
   - component: {fileID: 1487245936}
   - component: {fileID: 1487245935}
-  - component: {fileID: 1487245934}
-  - component: {fileID: 1487245933}
   m_Layer: 5
   m_Name: Page_2
   m_TagString: Untagged
@@ -2374,195 +2529,6 @@ RectTransform:
   m_AnchoredPosition: {x: 720, y: -2547}
   m_SizeDelta: {x: 1131, y: 1600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &1487245933
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487245931}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &1487245934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487245931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19e42da102f9f1b47b55fd848f1009e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UIAnimations.Runtime::UIAnimations.UIAnimator
-  playOnStart: 0
-  playOnEnable: 0
-  playForward: 1
-  useUnscaledTime: 1
-  move:
-    Enabled: 0
-    ValueMode: 0
-    FromDirection: 0
-    From: {x: 0, y: 0, z: 0}
-    ToDirection: 0
-    To: {x: 0, y: 0, z: 0}
-    Duration: 0.3
-    Delay: 0
-    Ease: 7
-    CustomCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    PlayMode: 0
-    Loop: 0
-    LoopStartDelay: 0
-    LoopInterval: 0
-    LoopCount: 0
-    Vibrato: 10
-    Elasticity: 1
-  rotate:
-    Enabled: 0
-    ValueMode: 0
-    From: {x: 0, y: 0, z: 0}
-    To: {x: 0, y: 0, z: 0}
-    Duration: 0.3
-    Delay: 0
-    Ease: 7
-    CustomCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    PlayMode: 0
-    Loop: 0
-    LoopStartDelay: 0
-    LoopInterval: 0
-    LoopCount: 0
-    Vibrato: 10
-    Elasticity: 1
-  scale:
-    Enabled: 0
-    ValueMode: 0
-    From: {x: 1, y: 1, z: 1}
-    To: {x: 1, y: 1, z: 1}
-    Duration: 0.3
-    Delay: 0
-    Ease: 7
-    CustomCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    PlayMode: 0
-    Loop: 0
-    LoopStartDelay: 0
-    LoopInterval: 0
-    LoopCount: 0
-    Vibrato: 10
-    Elasticity: 1
-  fade:
-    Enabled: 1
-    From: 0
-    To: 1
-    Duration: 0.5
-    Delay: 0
-    Ease: 7
-    CustomCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    PlayMode: 0
-    Loop: 0
-    LoopStartDelay: 0
-    LoopInterval: 0
-    LoopCount: 0
-  onStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onCompleted:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1487245935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2577,7 +2543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2654,7 +2620,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2728,7 +2694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3208,7 +3174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3602,7 +3568,7 @@ MonoBehaviour:
   m_Color: {r: 0.9372549, g: 0.9019608, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3665,8 +3631,6 @@ GameObject:
   - component: {fileID: 1916021646}
   - component: {fileID: 1916021648}
   - component: {fileID: 1916021647}
-  - component: {fileID: 1916021650}
-  - component: {fileID: 1916021649}
   m_Layer: 5
   m_Name: Page_1
   m_TagString: Untagged
@@ -3707,7 +3671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3731,195 +3695,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916021645}
   m_CullTransparentMesh: 1
---- !u!225 &1916021649
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916021645}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &1916021650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916021645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19e42da102f9f1b47b55fd848f1009e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UIAnimations.Runtime::UIAnimations.UIAnimator
-  playOnStart: 0
-  playOnEnable: 0
-  playForward: 1
-  useUnscaledTime: 1
-  move:
-    Enabled: 0
-    ValueMode: 0
-    FromDirection: 0
-    From: {x: 0, y: 0, z: 0}
-    ToDirection: 0
-    To: {x: 0, y: 0, z: 0}
-    Duration: 0.3
-    Delay: 0
-    Ease: 7
-    CustomCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    PlayMode: 0
-    Loop: 0
-    LoopStartDelay: 0
-    LoopInterval: 0
-    LoopCount: 0
-    Vibrato: 10
-    Elasticity: 1
-  rotate:
-    Enabled: 0
-    ValueMode: 0
-    From: {x: 0, y: 0, z: 0}
-    To: {x: 0, y: 0, z: 0}
-    Duration: 0.3
-    Delay: 0
-    Ease: 7
-    CustomCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    PlayMode: 0
-    Loop: 0
-    LoopStartDelay: 0
-    LoopInterval: 0
-    LoopCount: 0
-    Vibrato: 10
-    Elasticity: 1
-  scale:
-    Enabled: 0
-    ValueMode: 0
-    From: {x: 1, y: 1, z: 1}
-    To: {x: 1, y: 1, z: 1}
-    Duration: 0.3
-    Delay: 0
-    Ease: 7
-    CustomCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    PlayMode: 0
-    Loop: 0
-    LoopStartDelay: 0
-    LoopInterval: 0
-    LoopCount: 0
-    Vibrato: 10
-    Elasticity: 1
-  fade:
-    Enabled: 1
-    From: 0
-    To: 1
-    Duration: 0.5
-    Delay: 0
-    Ease: 7
-    CustomCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    PlayMode: 0
-    Loop: 0
-    LoopStartDelay: 0
-    LoopInterval: 0
-    LoopCount: 0
-  onStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onCompleted:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1940434397
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,9 +3762,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4062,7 +3837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4196,7 +3971,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4232,6 +4007,7 @@ GameObject:
   - component: {fileID: 2103087982}
   - component: {fileID: 2103087984}
   - component: {fileID: 2103087986}
+  - component: {fileID: 2103087987}
   m_Layer: 5
   m_Name: LetterBase
   m_TagString: Untagged
@@ -4280,7 +4056,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4632,6 +4408,19 @@ MonoBehaviour:
   onCompleted:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2103087987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103087980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4442e08095a6644598f4f53c560c06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+  soundId: bttn_click
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

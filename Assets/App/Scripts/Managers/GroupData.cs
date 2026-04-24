@@ -25,8 +25,11 @@ public class GroupData
     [Tooltip("Apartment display name shown in AlloggioPopup, e.g. 'Appartamento Gialli'.")]
     public string apartmentName = "";
 
-    [Tooltip("Full address of the apartment, e.g. 'Via Napoli 12, Città'.")]
-    public string apartmentAddress = "";
+    [Tooltip("Image of the apartment shown in AlloggioPopup when hasApartment is true.")]
+    public Sprite apartmentImage = null;
+
+    [Tooltip("Link for the apartment. Opened by a button in AlloggioPopup when hasApartment is true.")]
+    public string apartmentLink = "";
 
     [Tooltip("Extra notes displayed in AlloggioPopup: check-in time, key pickup instructions, etc. One note per list entry.")]
     public List<string> apartmentNotes = new List<string>();

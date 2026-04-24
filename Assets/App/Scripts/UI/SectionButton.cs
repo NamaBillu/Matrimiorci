@@ -71,12 +71,14 @@ public class SectionButton : MonoBehaviour
     private void OpenPasswordPopup()
     {
         PopupManager.Instance.Show("PasswordPopup");
+        SoundManager.Instance.Play("bttn_click");
     }
 
     private void OpenTargetPopup()
     {
         if (string.IsNullOrEmpty(popupId)) return;
         PopupManager.Instance.Show(popupId);
+        SoundManager.Instance.Play("bttn_click");
     }
 
     #endregion

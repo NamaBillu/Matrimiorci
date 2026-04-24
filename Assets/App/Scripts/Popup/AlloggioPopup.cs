@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AlloggioPopup : Popup
 {
@@ -11,8 +12,11 @@ public class AlloggioPopup : Popup
     [Tooltip("TextMeshProUGUI label for the apartment name.")]
     [SerializeField] private TextMeshProUGUI apartmentNameLabel;
 
-    [Tooltip("TextMeshProUGUI label for the apartment address.")]
-    [SerializeField] private TextMeshProUGUI apartmentAddressLabel;
+    [Tooltip("Image component to show the apartment image. Only active if the current group has a non-null apartmentImage.")]
+    [SerializeField] private Image apartmentImage;
+    
+    [Tooltip("Button that opens the apartment website link. Only active if the current group has a non-empty apartmentMapsLink.")]
+    [SerializeField] private Button openAptLinkButton;
 
     [Tooltip("TextMeshProUGUI label for apartment notes. Each entry in apartmentNotes is on its own line.")]
     [SerializeField] private TextMeshProUGUI apartmentNotesLabel;
@@ -42,10 +46,35 @@ public class AlloggioPopup : Popup
 
             if (apartmentNameLabel != null)
                 apartmentNameLabel.text = group.apartmentName;
-
-            if (apartmentAddressLabel != null)
-                apartmentAddressLabel.text = group.apartmentAddress;
-
+            if (apartmentImage != null)
+            {
+                if (group.apartmentImage != null)
+                {
+                    apartmentImage.gameObject.SetActive(true);
+                    apartmentImage.sprite = group.apartmentImage;
+                }
+                else
+                {
+                    apartmentImage.gameObject.SetActive(false);
+                }
+            }
+            if (openAptLinkButton != null)
+            {
+                if (!string.IsNullOrEmpty(group.apartmentLink))
+                {
+                    openAptLinkButton.gameObject.SetActive(true);
+                    openAptLinkButton.onClick.RemoveAllListeners();
+                    openAptLinkButton.onClick.AddListener(() =>
+                    {
+                        Application.OpenURL(group.apartmentLink);
+                        SoundManager.Instance.Play("bttn_click");
+                    });
+                }
+                else
+                {
+                    openAptLinkButton.gameObject.SetActive(false);
+                }
+            }
             if (apartmentNotesLabel != null)
                 apartmentNotesLabel.text = string.Join("\n", group.apartmentNotes);
         }
