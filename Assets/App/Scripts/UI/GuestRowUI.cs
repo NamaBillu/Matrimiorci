@@ -33,7 +33,7 @@ public class GuestRowUI : MonoBehaviour
     {
         get
         {
-            if (meatToggle != null && meatToggle.isOn)              return "carne";
+            if (meatToggle != null && meatToggle.isOn)              return "nessuna";
             if (vegetarianToggle != null && vegetarianToggle.isOn)  return "vegetariano";
             return "non specificato"; // fallback — prefab default (meatToggle.isOn) prevents this
         }

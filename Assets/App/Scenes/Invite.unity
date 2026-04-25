@@ -2439,13 +2439,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 58
+  m_fontSizeBase: 58
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3182,8 +3182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Clicca la lettera per aprirla
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6586122a197b2574c9d4a9f3d4a1417e, type: 2}
-  m_sharedMaterial: {fileID: -2179294878685510335, guid: 6586122a197b2574c9d4a9f3d4a1417e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ddc3989ad03c4e4e8e9ba6f91a8f6b7, type: 2}
+  m_sharedMaterial: {fileID: 7070636285824380254, guid: 8ddc3989ad03c4e4e8e9ba6f91a8f6b7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3207,13 +3207,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 46
+  m_fontSizeBase: 46
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3896,7 +3896,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 720, y: -3447}
-  m_SizeDelta: {x: 1000, y: 200}
+  m_SizeDelta: {x: 1100, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051822852
 MonoBehaviour:
@@ -3911,9 +3911,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
   m_IgnoreLayout: 0
-  m_MinWidth: 1000
+  m_MinWidth: 1100
   m_MinHeight: 200
-  m_PreferredWidth: 1000
+  m_PreferredWidth: 1100
   m_PreferredHeight: 200
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
