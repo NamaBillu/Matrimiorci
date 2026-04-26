@@ -1317,8 +1317,8 @@ MonoBehaviour:
     groupDisplayName: Cielo di Terracotta
     memberNames:
     - Andrea
-    - Compagna
-    - Figlia
+    - Nicole
+    - Alice
     hasBreakfastPref: 0
     hasApartment: 0
     apartmentName: 
@@ -1329,7 +1329,7 @@ MonoBehaviour:
     groupDisplayName: Bosco Incantato
     memberNames:
     - Adelmo
-    - Compagna
+    - Claudia
     hasBreakfastPref: 0
     hasApartment: 0
     apartmentName: 
@@ -1351,7 +1351,7 @@ MonoBehaviour:
     groupDisplayName: Sogno di Zafferano
     memberNames:
     - Luca
-    - Compagna
+    - Giulia
     hasBreakfastPref: 0
     hasApartment: 0
     apartmentName: 
@@ -1362,8 +1362,8 @@ MonoBehaviour:
     groupDisplayName: Notte di Gelsomino
     memberNames:
     - Fabio
-    - Compagna
-    - Figlia
+    - Sara
+    - Silvia
     hasBreakfastPref: 0
     hasApartment: 0
     apartmentName: 
@@ -1373,9 +1373,10 @@ MonoBehaviour:
   - password: Sentiero di Lavanda
     groupDisplayName: Sentiero di Lavanda
     memberNames:
+    - Sabrina
     - Federica
-    - Compagno
-    - Figlia
+    - Pasquale
+    - Beatrice
     hasBreakfastPref: 0
     hasApartment: 0
     apartmentName: 
