@@ -257,7 +257,7 @@ public class RSVPPopup : Popup
             {
                 if (option.BreakfastLabel != null && !string.IsNullOrEmpty(option.BreakfastLabel.text))
                 {
-                    selected.Add(option.BreakfastLabel.text);
+                    selected.Add($"{option.BreakfastValue} - Note: {option.BreakfastLabel.text}");
                 }
                 else
                 {
@@ -267,7 +267,7 @@ public class RSVPPopup : Popup
             }
             if (option.BreakfastLabel != null)
             {
-                selected.Add(option.BreakfastLabel.text);
+                selected.Add($"{option.BreakfastValue} - Note: {option.BreakfastLabel.text}");
             }
             else
             {
@@ -275,7 +275,7 @@ public class RSVPPopup : Popup
             }
         }
 
-        return selected.Count > 0 ? string.Join(", ", selected) : "non specificato";
+        return selected.Count > 0 ? string.Join(";\n", selected) : "non specificato";
     }
 
     #endregion
