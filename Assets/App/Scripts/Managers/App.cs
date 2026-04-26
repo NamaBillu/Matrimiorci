@@ -61,7 +61,7 @@ public class App : SingletonComponent<App>
         // Screen settings
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 120;
+        Application.targetFrameRate = 60;
 
         // Build O(1) password lookup — OrdinalIgnoreCase handles "rossi" vs "Rossi"
         _groupMap = new Dictionary<string, GroupData>(StringComparer.OrdinalIgnoreCase);
