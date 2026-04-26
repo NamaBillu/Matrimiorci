@@ -38,13 +38,21 @@ public class RSVPPopup : Popup
     [Tooltip("Panel shown only for groups with hasBreakfastPref = true (RSVP-07 / D-03).")]
     [SerializeField] private GameObject breakfastPanel;
 
-    [Tooltip("All breakfast option Toggles. Labels are read from each Toggle's child TMP_Text at submit time.")]
-    [SerializeField] private List<Toggle> breakfastToggles = new();
+    [Tooltip("All breakfast option Toggles. Labels are read from BreakfastOption class at submit time.")]
+    [SerializeField] private List<BreakfastOption> breakfastToggles = new();
 
     [Tooltip("Shared notes / dietary restrictions TMP_InputField for the whole group (RSVP-05 + RSVP-06 / D-05).")]
     [SerializeField] private TMP_InputField notesInput;
 
     #endregion
+
+    [Serializable]
+    public class BreakfastOption
+    {
+        public Toggle BreakfastToggle;
+        public TMP_InputField BreakfastLabel;
+        public string BreakfastValue; // fallback if label is missing
+    }
 
     #region Member Variables
 
@@ -106,6 +114,11 @@ public class RSVPPopup : Popup
     {
         if (_submitCoroutine != null) return; // double-tap guard
         _submitCoroutine = StartCoroutine(SubmitRSVP());
+    }
+
+    public void PlayButtonSound()
+    {
+        SoundManager.Instance.Play("bttn_click");
     }
 
     #endregion
@@ -236,13 +249,30 @@ public class RSVPPopup : Popup
     private string GetBreakfastValue()
     {
         var selected = new List<string>();
-
-        foreach (Toggle t in breakfastToggles)
+    
+        foreach (BreakfastOption option in breakfastToggles)
         {
-            if (t == null || !t.isOn) continue;
-            TMP_Text label = t.GetComponentInChildren<TMP_Text>();
-            if (label != null)
-                selected.Add(label.text);
+            if (option == null || option.BreakfastToggle == null) continue;
+            if (!option.BreakfastToggle.isOn)
+            {
+                if (option.BreakfastLabel != null && !string.IsNullOrEmpty(option.BreakfastLabel.text))
+                {
+                    selected.Add(option.BreakfastLabel.text);
+                }
+                else
+                {
+                    continue; // skip if toggle is off and label is missing/empty
+                }
+
+            }
+            if (option.BreakfastLabel != null)
+            {
+                selected.Add(option.BreakfastLabel.text);
+            }
+            else
+            {
+                selected.Add(option.BreakfastValue ?? "opzione sconosciuta");
+            }
         }
 
         return selected.Count > 0 ? string.Join(", ", selected) : "non specificato";

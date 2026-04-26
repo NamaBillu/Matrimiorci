@@ -1065,20 +1065,88 @@ MonoBehaviour:
   inviteSceneId: Invite
   homeSceneId: Home
   groupDatabase:
-  - password: testwithoutroom
-    groupDisplayName: Test Without Room
+  - password: codice di test senza stanza
+    groupDisplayName: codice di test senza stanza
     memberNames:
-    - test1_Nome test1_Cognome
-    - test2_Nome test2_Cognome
+    - Arianna
     hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: codice di test con stanza parterre
+    groupDisplayName: codice di test con stanza parterre
+    memberNames:
+    - Arianna Parterre
+    - 'Giovanni Parterre '
+    hasBreakfastPref: 1
     hasApartment: 1
-    apartmentName: Test Apartment
-    apartmentImage: {fileID: -348384981292778518, guid: a54d8f48660c9984abb692efeb4a0aac, type: 3}
-    apartmentLink: www.google.com
+    apartmentName: PARTERRE
+    apartmentImage: {fileID: 21300000, guid: e0386be0e3312cf4aa659baca4ee0b11, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/appartamento-parterre/
     apartmentNotes:
-    - Test note 1
-    - Test note 2
-    - Test note 3
+    - DAL 24/09 AL 27/09
+    - CHECKIN ORE 16:00
+    - CHECKOUT ORE 10:00
+  - password: codice di test con stanza belvedere
+    groupDisplayName: codice di test con stanza belvedere
+    memberNames:
+    - Arianna Belvedere
+    - Giovanni Belvedere
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: BELVEDERE
+    apartmentImage: {fileID: 21300000, guid: 576cc2209d1fb4c47858d845355f4f45, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/appartamento-belvedere/
+    apartmentNotes:
+    - DAL 24/09 AL 27/09
+    - CHECKIN ORE 16:00
+    - CHECKOUT ORE 10:00
+  - password: codice di test con stanza FONTE
+    groupDisplayName: codice di test con stanza FONTE
+    memberNames:
+    - Arianna FONTE
+    - Giovanni FONTE
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - DAL 25/09 AL 27/09
+    - CHECKIN ORE 16:00
+    - CHECKOUT ORE 10:00
+  - password: codice di test con stanza PALAZZO
+    groupDisplayName: codice di test con stanza PALAZZO
+    memberNames:
+    - Arianna PALAZZO
+    - Giovanni PALAZZO
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: PALAZZO
+    apartmentImage: {fileID: 21300000, guid: 4656bab3fe055104db6a57b218252d61, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-il-palazzo/
+    apartmentNotes:
+    - DAL 25/09 AL 27/09
+    - CHECKIN ORE 16:00
+    - CHECKOUT ORE 10:00
+  - password: codice di test con stanza BILLO
+    groupDisplayName: codice di test con stanza BILLO
+    memberNames:
+    - Arianna BILLO
+    - Giovanni BILLO
+    - Cicci
+    - Tao
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: BILLO
+    apartmentImage: {fileID: 21300000, guid: 23673ddfdaba8b34ebbe20fb8e050179, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-billo/
+    apartmentNotes:
+    - DAL 25/09 AL 27/09
+    - CHECKIN ORE 16:00
+    - CHECKOUT ORE 10:00
   loadingUI: {fileID: 936683693}
 --- !u!4 &2136416170
 Transform:

@@ -49,5 +49,10 @@ public class GuestRowUI : MonoBehaviour
             nameLabel.text = guestName;
     }
 
+    public void PlaySound()
+    {
+        SoundManager.Instance.Play("bttn_click");
+    }
+
     #endregion
 }
