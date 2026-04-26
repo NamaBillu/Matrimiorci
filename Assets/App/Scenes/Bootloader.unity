@@ -1075,8 +1075,8 @@ MonoBehaviour:
     apartmentImage: {fileID: 0}
     apartmentLink: 
     apartmentNotes: []
-  - password: codice di test con stanza parterre
-    groupDisplayName: codice di test con stanza parterre
+  - password: codice di test con stanza PARTERRE
+    groupDisplayName: codice di test con stanza PARTERRE
     memberNames:
     - Arianna Parterre
     - 'Giovanni Parterre '
@@ -1089,8 +1089,8 @@ MonoBehaviour:
     - DAL 24/09 AL 27/09
     - CHECKIN ORE 16:00
     - CHECKOUT ORE 10:00
-  - password: codice di test con stanza belvedere
-    groupDisplayName: codice di test con stanza belvedere
+  - password: codice di test con stanza BELVEDERE
+    groupDisplayName: codice di test con stanza BELVEDERE
     memberNames:
     - Arianna Belvedere
     - Giovanni Belvedere
@@ -1147,6 +1147,287 @@ MonoBehaviour:
     - DAL 25/09 AL 27/09
     - CHECKIN ORE 16:00
     - CHECKOUT ORE 10:00
+  - password: Orizzonte Calmo
+    groupDisplayName: Orizzonte Calmo
+    memberNames:
+    - Franca
+    - Danila
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: PARTERRE
+    apartmentImage: {fileID: 21300000, guid: e0386be0e3312cf4aa659baca4ee0b11, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/appartamento-parterre/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 24/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Respiro di Pietra
+    groupDisplayName: Respiro di Pietra
+    memberNames:
+    - Peppe
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: BELVEDERE
+    apartmentImage: {fileID: 21300000, guid: 576cc2209d1fb4c47858d845355f4f45, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/appartamento-belvedere/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: "Foglia d\u2019Argento"
+    groupDisplayName: "Foglia d\u2019Argento"
+    memberNames:
+    - Gino
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: BELVEDERE
+    apartmentImage: {fileID: 21300000, guid: 576cc2209d1fb4c47858d845355f4f45, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/appartamento-belvedere/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Luce sul Lago
+    groupDisplayName: Luce sul Lago
+    memberNames:
+    - Franca
+    - Salvatore
+    - Alessandro
+    - Davide
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Vento tra i Girasoli
+    groupDisplayName: Vento tra i Girasoli
+    memberNames:
+    - Salvatore
+    - Valeria
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Collina di Sole
+    groupDisplayName: Collina di Sole
+    memberNames:
+    - Ylenia
+    - Alessandro
+    - Rebecca
+    - Riccardo
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Petali nel Sole
+    groupDisplayName: Petali nel Sole
+    memberNames:
+    - Tania
+    - Stefano
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Terra Profumata
+    groupDisplayName: Terra Profumata
+    memberNames:
+    - Vincenzo
+    - Mariaconcetta
+    - Dario
+    - Maddalena
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Luce tra le Vigne
+    groupDisplayName: Luce tra le Vigne
+    memberNames:
+    - Amos
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: PARTERRE
+    apartmentImage: {fileID: 21300000, guid: e0386be0e3312cf4aa659baca4ee0b11, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/appartamento-parterre/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
+    - DAL 24/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Alba di Vigneto
+    groupDisplayName: Alba di Vigneto
+    memberNames:
+    - Cinzia
+    - Pino
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: PALAZZO
+    apartmentImage: {fileID: 21300000, guid: 4656bab3fe055104db6a57b218252d61, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-il-palazzo/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 24/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Tramonto di Rugiada
+    groupDisplayName: Tramonto di Rugiada
+    memberNames:
+    - Piero
+    - Francesca
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: PALAZZO
+    apartmentImage: {fileID: 21300000, guid: 4656bab3fe055104db6a57b218252d61, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-il-palazzo/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 24/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Acqua di Sorgente
+    groupDisplayName: Acqua di Sorgente
+    memberNames:
+    - Simonetta
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Cielo di Terracotta
+    groupDisplayName: Cielo di Terracotta
+    memberNames:
+    - Andrea
+    - Compagna
+    - Figlia
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Bosco Incantato
+    groupDisplayName: Bosco Incantato
+    memberNames:
+    - Adelmo
+    - Compagna
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Riflesso Ambrato
+    groupDisplayName: Riflesso Ambrato
+    memberNames:
+    - Patrizia
+    - Valentino
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Sogno di Zafferano
+    groupDisplayName: Sogno di Zafferano
+    memberNames:
+    - Luca
+    - Compagna
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Notte di Gelsomino
+    groupDisplayName: Notte di Gelsomino
+    memberNames:
+    - Fabio
+    - Compagna
+    - Figlia
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Sentiero di Lavanda
+    groupDisplayName: Sentiero di Lavanda
+    memberNames:
+    - Federica
+    - Compagno
+    - Figlia
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Eco di Campagna
+    groupDisplayName: Eco di Campagna
+    memberNames:
+    - Sabrina
+    - Giuliano
+    - Michele
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: BILLO
+    apartmentImage: {fileID: 21300000, guid: 23673ddfdaba8b34ebbe20fb8e050179, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-billo/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Aria di Miele
+    groupDisplayName: Aria di Miele
+    memberNames:
+    - Ada
+    - Brando
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: BILLO
+    apartmentImage: {fileID: 21300000, guid: 23673ddfdaba8b34ebbe20fb8e050179, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-billo/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Ombra di Ulivo
+    groupDisplayName: Ombra di Ulivo
+    memberNames:
+    - Cicci
+    - Marco
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: PALAZZO
+    apartmentImage: {fileID: 21300000, guid: 4656bab3fe055104db6a57b218252d61, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-il-palazzo/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
   loadingUI: {fileID: 936683693}
 --- !u!4 &2136416170
 Transform:

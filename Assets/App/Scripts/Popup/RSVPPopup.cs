@@ -227,9 +227,9 @@ public class RSVPPopup : Popup
             sb.Append($"&guest{i}Name=");
             sb.Append(Uri.EscapeDataString(row.GuestName));
             sb.Append($"&guest{i}Attendance=");
-            sb.Append(row.IsAttending ? "si" : "no");
+            sb.Append(row.IsAttending ? "Partecipa: Si" : "Partecipa: No");
             sb.Append($"&guest{i}Meal=");
-            sb.Append(Uri.EscapeDataString(row.SelectedMeal));
+            sb.Append(Uri.EscapeDataString($"Preferenze: {row.SelectedMeal}"));
         }
 
         // D-03: breakfast preference (apartment groups only, hasBreakfastPref)
@@ -241,7 +241,7 @@ public class RSVPPopup : Popup
 
         // D-05: shared notes field covering RSVP-05 (dietary) + RSVP-06 (general notes)
         sb.Append("&notes=");
-        sb.Append(Uri.EscapeDataString(notesInput != null ? notesInput.text : string.Empty));
+        sb.Append(Uri.EscapeDataString(notesInput != null ? $"Note aggiuntive: {notesInput.text}" : string.Empty));
 
         return sb.ToString();
     }
@@ -258,6 +258,7 @@ public class RSVPPopup : Popup
                 if (option.BreakfastLabel != null && !string.IsNullOrEmpty(option.BreakfastLabel.text))
                 {
                     selected.Add($"{option.BreakfastValue} - Note: {option.BreakfastLabel.text}");
+                    continue; // include in output even if toggle is off, since label has content
                 }
                 else
                 {
