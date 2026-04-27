@@ -441,7 +441,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: -17.3}
+  m_AnchoredPosition: {x: 8, y: -2.3}
   m_SizeDelta: {x: 220, y: 220}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &25091036
@@ -3826,8 +3826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -255, y: -7.43}
-  m_SizeDelta: {x: 167.88, y: 197.77}
+  m_AnchoredPosition: {x: -255, y: 0}
+  m_SizeDelta: {x: 309.17, y: 151.78}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &230443533
 MonoBehaviour:
@@ -3863,13 +3863,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '3:00 PM
+  m_text: '4:00 PM
 
     TAGLIO
 
-    DELLA
-
-    TORTA'
+    DELLA TORTA'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ddc3989ad03c4e4e8e9ba6f91a8f6b7, type: 2}
   m_sharedMaterial: {fileID: 7070636285824380254, guid: 8ddc3989ad03c4e4e8e9ba6f91a8f6b7, type: 2}
@@ -3938,7 +3936,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &230443535
@@ -20182,7 +20180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 255, y: 15.08}
+  m_AnchoredPosition: {x: 255, y: 12}
   m_SizeDelta: {x: 192.23, y: 105.79}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1202970532
@@ -20219,7 +20217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '4:00 PM
+  m_text: '5:00 PM
 
     SI BALLA'
   m_isRightToLeft: 0
@@ -20290,7 +20288,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1202970534
@@ -20540,7 +20538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -255, y: -7.43}
+  m_AnchoredPosition: {x: -255, y: 0}
   m_SizeDelta: {x: 246.62, y: 151.78}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1253628582
@@ -20577,7 +20575,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '12:00 AM
+  m_text: '12:30 AM
 
     APERITIVO
 
@@ -20650,7 +20648,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1253628584
@@ -29725,8 +29723,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 255, y: -9}
-  m_SizeDelta: {x: 243.52, y: 151.78}
+  m_AnchoredPosition: {x: 255, y: 0}
+  m_SizeDelta: {x: 246.62, y: 151.78}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1873568981
 MonoBehaviour:
@@ -29762,11 +29760,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1:00 PM
+  m_text: '1:30 PM
 
-    PRANZO IN
+    PRANZO
 
-    TENUTA'
+    IN TENUTA'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ddc3989ad03c4e4e8e9ba6f91a8f6b7, type: 2}
   m_sharedMaterial: {fileID: 7070636285824380254, guid: 8ddc3989ad03c4e4e8e9ba6f91a8f6b7, type: 2}
@@ -29835,7 +29833,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1873568983
@@ -30242,8 +30240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 255, y: -50}
-  m_SizeDelta: {x: 268.27, y: 243.76}
+  m_AnchoredPosition: {x: 255, y: 0}
+  m_SizeDelta: {x: 256.81, y: 151.78}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1895972426
 MonoBehaviour:
@@ -30283,11 +30281,7 @@ MonoBehaviour:
 
     CERIMONIA
 
-    RELIGIOSA
-
-    CAPPELLA
-
-    MIGLIAIOLO'
+    RELIGIOSA'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ddc3989ad03c4e4e8e9ba6f91a8f6b7, type: 2}
   m_sharedMaterial: {fileID: 7070636285824380254, guid: 8ddc3989ad03c4e4e8e9ba6f91a8f6b7, type: 2}
@@ -30356,7 +30350,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1895972428
