@@ -1176,8 +1176,8 @@ MonoBehaviour:
     - DAL 25/09 AL 27/09
     - CHECK-IN ORE 16:00
     - CHECK-OUT ORE 10:00
-  - password: "Foglia d\u2019Argento"
-    groupDisplayName: "Foglia d\u2019Argento"
+  - password: Foglia di Rame
+    groupDisplayName: Foglia di Rame
     memberNames:
     - Gino
     hasBreakfastPref: 1
