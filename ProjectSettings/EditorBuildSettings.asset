@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/App/Scenes/Bootloader.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/App/Scenes/Invite.unity
     guid: 838b4b49cf039a242ba052c5ad4e3169
-  - enabled: 1
+  - enabled: 0
     path: Assets/App/Scenes/Home.unity
     guid: daf74060d76d7154dbcc54f825517734
   m_configObjects:
