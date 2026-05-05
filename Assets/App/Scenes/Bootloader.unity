@@ -1253,12 +1253,16 @@ MonoBehaviour:
     - Mariaconcetta
     - Dario
     - Maddalena
-    hasBreakfastPref: 0
-    hasApartment: 0
-    apartmentName: 
-    apartmentImage: {fileID: 0}
-    apartmentLink: 
-    apartmentNotes: []
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: PARTERRE
+    apartmentImage: {fileID: 21300000, guid: e0386be0e3312cf4aa659baca4ee0b11, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/appartamento-parterre/
+    apartmentNotes:
+    - SARETE NOSTRI OSPITI
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
   - password: Luce tra le Vigne
     groupDisplayName: Luce tra le Vigne
     memberNames:
