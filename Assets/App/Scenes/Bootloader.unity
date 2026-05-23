@@ -1236,16 +1236,12 @@ MonoBehaviour:
     memberNames:
     - Tania
     - Stefano
-    hasBreakfastPref: 1
-    hasApartment: 1
-    apartmentName: FONTE
-    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
-    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
-    apartmentNotes:
-    - SARETE NOSTRI OSPITI
-    - DAL 25/09 AL 27/09
-    - CHECK-IN ORE 16:00
-    - CHECK-OUT ORE 10:00
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
   - password: Terra Profumata
     groupDisplayName: Terra Profumata
     memberNames:
@@ -1430,6 +1426,90 @@ MonoBehaviour:
     apartmentLink: https://tenutadicaiolo.it/casa-il-palazzo/
     apartmentNotes:
     - SARETE NOSTRI OSPITI
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Rosa di Campo
+    groupDisplayName: Rosa di Campo
+    memberNames:
+    - Luca
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Miele di Settembre
+    groupDisplayName: Miele di Settembre
+    memberNames:
+    - Mattia
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Fiore di Mandorlo
+    groupDisplayName: Fiore di Mandorlo
+    memberNames:
+    - Ciccio
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Sera di Grano
+    groupDisplayName: Sera di Grano
+    memberNames:
+    - Pietro
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Canto di Cicale
+    groupDisplayName: Canto di Cicale
+    memberNames:
+    - Mariano
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
+    - DAL 25/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
+  - password: Brezza di Rosmarino
+    groupDisplayName: Brezza di Rosmarino
+    memberNames:
+    - Fausto
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: FONTE
+    apartmentImage: {fileID: 21300000, guid: 0dded748474f5b546a9ba960be6946d7, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-la-fonte/
+    apartmentNotes:
+    - SARAI NOSTRO OSPITE
     - DAL 25/09 AL 27/09
     - CHECK-IN ORE 16:00
     - CHECK-OUT ORE 10:00
