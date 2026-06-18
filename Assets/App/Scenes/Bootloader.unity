@@ -1513,6 +1513,20 @@ MonoBehaviour:
     - DAL 25/09 AL 27/09
     - CHECK-IN ORE 16:00
     - CHECK-OUT ORE 10:00
+  - password: Danza di Mulino
+    groupDisplayName: Danza di Mulino
+    memberNames:
+    - Paola
+    hasBreakfastPref: 1
+    hasApartment: 1
+    apartmentName: PALAZZO
+    apartmentImage: {fileID: 21300000, guid: 4656bab3fe055104db6a57b218252d61, type: 3}
+    apartmentLink: https://tenutadicaiolo.it/casa-il-palazzo/
+    apartmentNotes:
+    - SARAI NOSTRA OSPITE
+    - DAL 26/09 AL 27/09
+    - CHECK-IN ORE 16:00
+    - CHECK-OUT ORE 10:00
   loadingUI: {fileID: 936683693}
 --- !u!4 &2136416170
 Transform:
