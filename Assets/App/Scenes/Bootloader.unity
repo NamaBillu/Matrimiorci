@@ -1555,6 +1555,56 @@ MonoBehaviour:
     - DAL 25/09 AL 27/09
     - CHECK-IN ORE 16:00
     - CHECK-OUT ORE 10:00
+  - password: Radice di Quercia
+    groupDisplayName: Radice di Quercia
+    memberNames:
+    - Ing. Giancarlo Tanzi
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Respiro di Mare
+    groupDisplayName: Respiro di Mare
+    memberNames:
+    - Elena
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Rugiada di Bosco
+    groupDisplayName: Rugiada di Bosco
+    memberNames:
+    - Pablo
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Sapore di Rugiada
+    groupDisplayName: Sapore di Rugiada
+    memberNames:
+    - Federica
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
+  - password: Sentiero di Vento
+    groupDisplayName: Sentiero di Vento
+    memberNames:
+    - Antonio
+    hasBreakfastPref: 0
+    hasApartment: 0
+    apartmentName: 
+    apartmentImage: {fileID: 0}
+    apartmentLink: 
+    apartmentNotes: []
   loadingUI: {fileID: 936683693}
 --- !u!4 &2136416170
 Transform:
